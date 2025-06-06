@@ -121,10 +121,3 @@ if __name__ == "__main__":
         checker.sign(game, endpoint)
     
     logging.info("--- Script completed, exiting now ---")
-
-
-
-
-
-
-
