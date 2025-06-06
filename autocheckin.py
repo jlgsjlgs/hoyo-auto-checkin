@@ -112,7 +112,7 @@ class CheckIn:
                 logging.error(f"API error: {body.get('message')}")
                 logging.error(f"Full response: {json.dumps(body, indent=2)}")
         except Exception as e:
-            logging.error(f"Sign-in error: {e}")
+            logging.error(f"Check-in error: {e}")
 
 if __name__ == "__main__":
     checker = CheckIn()
