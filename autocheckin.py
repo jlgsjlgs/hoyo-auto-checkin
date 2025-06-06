@@ -2,10 +2,8 @@ import os
 import requests
 import json
 import logging
-from dotenv import load_dotenv
 from urllib.parse import urlparse, parse_qs
 
-load_dotenv()
 logging.basicConfig(
     level=logging.INFO,  
     format='%(asctime)s - %(levelname)s - %(message)s'
