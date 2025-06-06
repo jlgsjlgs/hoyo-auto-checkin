@@ -1,0 +1,24 @@
+name: Hoyo auto check-in
+
+on:
+  schedule:
+    - cron: '0 0 * * *'  # Runs daily at midnight UTC, which is 8 AM GMT+8
+
+jobs:
+  run-script:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Run Reddit to Discord script
+        env:
+          COOKIE: ${{ secrets.COOKIE }}
+          WEBHOOK_URL: ${{ secrets.WEBHOOK_URL }}
+        run: python autocheckin.py
