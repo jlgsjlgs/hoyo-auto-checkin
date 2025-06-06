@@ -3,6 +3,7 @@ name: Hoyo auto check-in
 on:
   schedule:
     - cron: '0 0 * * *'  # Runs daily at midnight UTC, which is 8 AM GMT+8
+  workflow_dispatch:
 
 jobs:
   run-script:
