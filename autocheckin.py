@@ -10,8 +10,8 @@ logging.basicConfig(
 )
 
 API_ENDPOINTS = {
-    "Honkai: Star Rail": "https://sg-public-api.hoyolab.com/event/luna/os/sign?act_id=e202303301540311",
-    "Zenless Zone Zero": "https://sg-public-api.hoyolab.com/event/luna/zzz/os/sign?act_id=e202406031448091"
+    "Honkai: Star Rail": "https://sg-public-api.hoyolab.com/event/luna/os/sign?act_id=e202303301540311"
+    # "Zenless Zone Zero": "https://sg-public-api.hoyolab.com/event/luna/zzz/os/sign?act_id=e202406031448091"
 }
 
 HTTP_GAME_HEADER = {
