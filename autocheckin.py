@@ -51,6 +51,7 @@ class DiscordWebhook:
         payload = {
             "embeds": [embed],
             "username": "Auto check-in bot",
+            "avatar_url": "https://preview.redd.it/has-anyone-made-a-hsr-app-icon-version-of-acheron-yet-v0-54dm5me6n5nc1.png?auto=webp&s=b49307f3118da563bee127355b822940f5d42573"
         }
 
         try:
